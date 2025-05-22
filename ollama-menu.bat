@@ -62,18 +62,15 @@ echo.
 echo Updating all models...
 REM List of English models to update
 for %%m in (
-    llama3
     llama3.1
     llama3.2
     llama3.3
-    gemma
     gemma2
     gemma3
     mistral
     mistral-small
     mistral-large
     mixtral
-    phi3
     phi3.5
     phi4
     phi4-mini
@@ -83,9 +80,7 @@ for %%m in (
     codestral
     codegemma
     codellama
-    deepseek-coder
     deepseek-coder-v2
-    starcoder
     starcoder2
     wizardcoder
     deepseek-v2
@@ -95,13 +90,10 @@ for %%m in (
     openthinker
     smallthinker
     r1-1776
-    granite3.1-dense
-    granite3.1-moe
     granite3.2
     granite3.2-vision
     falcon3
     granite-embedding
-    snowflake-arctic-embed
     snowflake-arctic-embed2
     mxbai-embed-large
     all-minilm
@@ -116,7 +108,6 @@ for %%m in (
     wizard-vicuna-uncensored
     medllama2
     meditron
-    llava
     llava-phi3
     llava-llama3
     moondream
@@ -235,26 +226,21 @@ goto menu
 
 :general
 call :display_submenu "General Purpose Models" ^
-    "llama3|Meta's Llama 3: High-performance 8B & 70B models." ^
     "llama3.1|State-of-the-art Llama 3.1 models (8B, 70B, 405B)." ^
     "llama3.2|Compact Llama 3.2 models (1B, 3B)." ^
     "llama3.3|High-performance Llama 3.3 70B model." ^
-    "gemma|Google's Gemma: Open lightweight 2B & 7B models." ^
     "gemma2|Efficient Google Gemma2 models (2B, 9B, 27B)." ^
     "gemma3|Google's most capable single-GPU Gemma3 model." ^
     "mistral|Mistral AI's Mistral: Efficient 7.3B parameter model." ^
     "mistral-small|Mistral AI's compact high-performing model for low latency." ^
     "mistral-large|Mistral AI's flagship 123B parameter model." ^
     "mixtral|Mistral AI's Sparse Mixture of Experts (SMoE) models (8x7B, 8x22B)." ^
-    "phi3|Microsoft's Phi-3: Lightweight 3.8B SLM." ^
     "phi3.5|Microsoft's enhanced Phi-3.5 3.8B model." ^
     "phi4|Microsoft's 14B state-of-the-art Phi-4 model." ^
     "phi4-mini|Microsoft's Phi-4-mini 3.8B with multilingual & reasoning." ^
     "command-r|Cohere's Command-R: 35B conversational & RAG model." ^
     "command-r-plus|Cohere's Command R+: 104B enterprise model for RAG & tool use." ^
     "command-a|Cohere's Command-A: 111B model for demanding enterprise workloads." ^
-    "granite3.1-dense|IBM's Granite 3.1 Dense: 2B & 8B text models." ^
-    "granite3.1-moe|IBM's Granite 3.1 MoE: Low-latency 1B & 3B models." ^
     "granite3.2|IBM's Granite 3.2: Long-context 2B & 8B models." ^
     "granite3-dense|IBM's Granite3 Dense: Tool-based 2B & 8B models." ^
     "granite3-moe|IBM's Granite3 MoE: 1B & 3B for low latency." ^
@@ -321,9 +307,7 @@ call :display_submenu "Code-Specialized Models" ^
     "codestral|Mistral AI's Codestral: 22B specialized code model." ^
     "codegemma|Google's CodeGemma: 2B & 7B open code models." ^
     "codellama|Meta's Code Llama: 7B-70B models for code generation, infilling." ^
-    "deepseek-coder|DeepSeek Coder: 1.3B-33B models, 2T token trained." ^
     "deepseek-coder-v2|DeepSeek Coder V2: Advanced 16B & 236B MoE code models." ^
-    "starcoder|BigCode's StarCoder: 15.5B model for 80+ languages." ^
     "starcoder2|BigCode's StarCoder2: 3B, 7B, 15B, 600+ languages." ^
     "wizardcoder|WizardLM's WizardCoder: 33B SOTA code model from StarCoder." ^
     "qwen2.5-coder|Alibaba's Qwen2.5 Coder: 0.5B to 32B code models." ^
@@ -361,7 +345,6 @@ goto menu
 :embedding
 call :display_submenu "Embedding Models" ^
     "granite-embedding|IBM's Granite Embedding: 30M & 278M models." ^
-    "snowflake-arctic-embed|Snowflake's Arctic Embed: 22M to 335M suite." ^
     "snowflake-arctic-embed2|Snowflake's Arctic Embed2: 568M embedding model." ^
     "mxbai-embed-large|Mixedbread AI's mxbai-embed-large: SOTA 335M model." ^
     "all-minilm|Sentence Transformers' All-MiniLM: 22M & 33M sentence embeddings." ^
@@ -392,7 +375,6 @@ goto menu
 
 :specialized
 call :display_submenu "Specialized Models" ^
-    "llava|LLaVA: Large Language and Vision Assistant (7B-34B)." ^
     "llava-phi3|LLaVA-Phi3: 3.8B vision model." ^
     "llava-llama3|LLaVA-Llama3: 8B vision benchmark model." ^
     "moondream|Moondream: Tiny 1.8B vision model for edge devices." ^
