@@ -235,174 +235,174 @@ goto menu
 
 :general
 call :display_submenu "General Purpose Models" ^
-    "llama3|Meta's capable 8B and 70B model" ^
-    "llama3.1|State-of-the-art model in 8B, 70B, 405B" ^
-    "llama3.2|Compact 1B and 3B models" ^
-    "llama3.3|High-performance 70B model" ^
-    "gemma|Google's lightweight 2B and 7B models" ^
-    "gemma2|Efficient 2B, 9B, 27B models" ^
-    "gemma3|Most capable single-GPU model" ^
-    "mistral|7B model by Mistral AI" ^
-    "mistral-small|Compact high-performing model" ^
-    "mistral-large|Mistral's flagship 123B model" ^
-    "mixtral|MoE model in 8x7B and 8x22B" ^
-    "phi3|Lightweight 3.8B model by Microsoft" ^
-    "phi3.5|Enhanced 3.8B model" ^
-    "phi4|14B state-of-the-art model" ^
-    "phi4-mini|3.8B with multilingual and reasoning" ^
-    "command-r|35B conversational model" ^
-    "command-r-plus|104B enterprise model" ^
-    "command-a|111B for demanding enterprises" ^
-    "granite3.1-dense|IBM's 2B and 8B text models" ^
-    "granite3.1-moe|Low-latency 1B and 3B models" ^
-    "granite3.2|Long-context 2B and 8B models" ^
-    "granite3-dense|Tool-based 2B and 8B models" ^
-    "granite3-moe|MoE 1B and 3B for low latency" ^
-    "falcon3|Efficient models under 10B" ^
-    "olmo2|Open 7B and 13B models" ^
-    "command-r7b|Smallest Cohere R-series model" ^
-    "nemotron|NVIDIA's 70B instruct model" ^
-    "nemotron-mini|4B for roleplay and RAG" ^
-    "solar-pro|22B model for single GPU" ^
-    "hermes3|Nous Research's 3B to 405B models" ^
-    "wizardlm2|Microsoft's advanced model" ^
-    "nous-hermes2|10.7B and 34B by Nous Research" ^
-    "notus|7B chat model based on Zephyr" ^
-    "notux|Top-performing MoE model" ^
-    "openhermes|7B fine-tuned on Mistral" ^
-    "tinyllama|Compact 1.1B model" ^
-    "llama-pro|Expanded Llama 2 for programming" ^
-    "megadolphin|120B interleaved Dolphin model" ^
-    "zephyr|Fine-tuned Mistral and Mixtral" ^
-    "mistral-openorca|7B fine-tuned on OpenOrca" ^
-    "mistrallite|Long-context Mistral model" ^
-    "xwinlm|Conversational Llama 2-based model" ^
-    "neural-chat|Fine-tuned Mistral model" ^
-    "openchat|High-performing open-source model" ^
-    "yi|High-performing 6B, 9B, 34B model" ^
-    "goliath|Combined Llama 2 70B model" ^
-    "alfred|Robust conversational model" ^
-    "dbrx|132B general-purpose by Databricks" ^
-    "starling-lm|7B model for chatbot helpfulness" ^
-    "stablelm2|1.6B and 12B multilingual model" ^
-    "qwen3|Qwen3 series of dense and MoE models" ^
-    "llama4|Meta's latest multimodal models" ^
-    "mistral-nemo|12B model with 128k context length" ^
-    "qwq|Reasoning model of the Qwen series" ^
-    "deepseek-v3|671B MoE language model" ^
-    "dolphin3|Dolphin 3.0 Llama 3.1 8B general purpose model" ^
-    "llama2-chinese|Llama 2 fine-tuned for Chinese dialogue" ^
-    "aya|Cohere's multilingual models (23 languages)" ^
-    "glm4|Strong multi-lingual general language model" ^
-    "llama3-chatqa|NVIDIA's Llama 3 for conversational QA and RAG" ^
-    "llama3-gradient|Llama-3 8B with extended context length" ^
-    "solar|Compact 10.7B large language model" ^
-    "internlm2|7B model for practical scenarios with reasoning" ^
-    "wizardlm|General use model based on Llama 2" ^
-    "exaone3.5|LG AI's bilingual (English/Korean) models" ^
-    "granite3.3|IBM Granite 2B/8B 128K context models" ^
-    "shieldgemma|Instruction tuned models for safety evaluation" ^
-    "exaone-deep|LG AI's reasoning models (math/coding)" ^
-    "llama-guard3|Content safety classification models" ^
-    "reader-lm|HTML to Markdown conversion models" ^
-    "duckdb-nsql|7B text-to-SQL model" ^
-    "falcon2|11B causal decoder-only model" ^
-    "command-r7b-arabic|Command R7B with advanced Arabic capabilities" ^
-    "tulu3|Allen AI's instruction following model family" ^
-    "nuextract|3.8B information extraction model based on Phi-3" ^
-    "bespoke-minicheck|State-of-the-art fact-checking model" ^
-    "granite3-guardian|IBM's risk detection models for prompts/responses" ^
-    "sailor2|Multilingual models for South-East Asia" ^
-    "marco-o1|Alibaba's open large reasoning model"
+    "llama3|Meta's Llama 3: High-performance 8B & 70B models." ^
+    "llama3.1|State-of-the-art Llama 3.1 models (8B, 70B, 405B)." ^
+    "llama3.2|Compact Llama 3.2 models (1B, 3B)." ^
+    "llama3.3|High-performance Llama 3.3 70B model." ^
+    "gemma|Google's Gemma: Open lightweight 2B & 7B models." ^
+    "gemma2|Efficient Google Gemma2 models (2B, 9B, 27B)." ^
+    "gemma3|Google's most capable single-GPU Gemma3 model." ^
+    "mistral|Mistral AI's Mistral: Efficient 7.3B parameter model." ^
+    "mistral-small|Mistral AI's compact high-performing model for low latency." ^
+    "mistral-large|Mistral AI's flagship 123B parameter model." ^
+    "mixtral|Mistral AI's Sparse Mixture of Experts (SMoE) models (8x7B, 8x22B)." ^
+    "phi3|Microsoft's Phi-3: Lightweight 3.8B SLM." ^
+    "phi3.5|Microsoft's enhanced Phi-3.5 3.8B model." ^
+    "phi4|Microsoft's 14B state-of-the-art Phi-4 model." ^
+    "phi4-mini|Microsoft's Phi-4-mini 3.8B with multilingual & reasoning." ^
+    "command-r|Cohere's Command-R: 35B conversational & RAG model." ^
+    "command-r-plus|Cohere's Command R+: 104B enterprise model for RAG & tool use." ^
+    "command-a|Cohere's Command-A: 111B model for demanding enterprise workloads." ^
+    "granite3.1-dense|IBM's Granite 3.1 Dense: 2B & 8B text models." ^
+    "granite3.1-moe|IBM's Granite 3.1 MoE: Low-latency 1B & 3B models." ^
+    "granite3.2|IBM's Granite 3.2: Long-context 2B & 8B models." ^
+    "granite3-dense|IBM's Granite3 Dense: Tool-based 2B & 8B models." ^
+    "granite3-moe|IBM's Granite3 MoE: 1B & 3B for low latency." ^
+    "falcon3|TII's Falcon3: Efficient models under 10B." ^
+    "olmo2|AI2's OLMo2: Open 7B & 13B language models." ^
+    "command-r7b|Cohere's Command R 7B: Smallest R-series model." ^
+    "nemotron|NVIDIA's Nemotron: 70B instruct model." ^
+    "nemotron-mini|NVIDIA's Nemotron Mini: 4B for roleplay & RAG." ^
+    "solar-pro|Upstage's Solar Pro: 22B model for single GPU." ^
+    "hermes3|Nous Research's Hermes3: 3B to 405B models." ^
+    "wizardlm2|Microsoft's WizardLM-2: Advanced conversational model." ^
+    "nous-hermes2|Nous Research's Hermes2: 10.7B & 34B models." ^
+    "notus|Argilla's Notus: 7B chat model based on Zephyr." ^
+    "notux|Argilla's Notux: Top-performing MoE model." ^
+    "openhermes|Teknium's OpenHermes: 7B fine-tuned on Mistral." ^
+    "tinyllama|TinyLlama: Compact 1.1B model." ^
+    "llama-pro|Expanded Llama 2 for programming tasks." ^
+    "megadolphin|Eric Hartford's MegaDolphin: 120B interleaved Dolphin model." ^
+    "zephyr|HuggingFace's Zephyr: Fine-tuned Mistral & Mixtral models." ^
+    "mistral-openorca|OpenOrca fine-tune of Mistral 7B." ^
+    "mistrallite|Amazon's MistralLite: Long-context Mistral model." ^
+    "xwinlm|Xwin-LM: Conversational Llama 2-based model." ^
+    "neural-chat|Intel's Neural Chat: Fine-tuned Mistral model." ^
+    "openchat|OpenChat: High-performing open-source chat model." ^
+    "yi|01.AI's Yi: High-performing 6B, 9B, 34B models." ^
+    "goliath| Goliath: Combined Llama 2 70B model." ^
+    "alfred|Alfred: Robust conversational model." ^
+    "dbrx|Databricks' DBRX: 132B general-purpose MoE model." ^
+    "starling-lm|Berkeley's Starling-LM: 7B model for chatbot helpfulness." ^
+    "stablelm2|Stability AI's StableLM2: 1.6B & 12B multilingual models." ^
+    "qwen3|Alibaba's Qwen3: Series of dense and MoE models." ^
+    "llama4|Meta's Llama 4: Latest multimodal models." ^
+    "mistral-nemo|Mistral-Nemo: 12B model with 128k context length." ^
+    "qwq|Qwen's QWQ: Reasoning model of the Qwen series." ^
+    "deepseek-v3|DeepSeek V3: 671B MoE language model." ^
+    "dolphin3|Eric Hartford's Dolphin 3.0: Llama 3.1 8B general purpose model" ^
+    "llama2-chinese|Llama 2 fine-tuned for Chinese dialogue." ^
+    "aya|Cohere's Aya: Multilingual models (23 languages)." ^
+    "glm4|Zhipu AI's GLM-4: Strong multi-lingual general language model." ^
+    "llama3-chatqa|NVIDIA's Llama 3 ChatQA: For conversational QA & RAG." ^
+    "llama3-gradient|Gradient AI's Llama-3 8B with extended context length." ^
+    "solar|Upstage's Solar: Compact 10.7B large language model." ^
+    "internlm2|InternLM2: 7B model for practical scenarios with reasoning." ^
+    "wizardlm|Microsoft's WizardLM: General use model based on Llama 2." ^
+    "exaone3.5|LG AI's EXAONE 3.5: Bilingual (English/Korean) models." ^
+    "granite3.3|IBM's Granite 3.3: 2B/8B 128K context models." ^
+    "shieldgemma|Google's Shield Gemma: Instruction tuned for safety evaluation." ^
+    "exaone-deep|LG AI's EXAONE Deep: Reasoning models (math/coding)." ^
+    "llama-guard3|Meta's Llama Guard 3: Content safety classification models." ^
+    "reader-lm|Reader LM: HTML to Markdown conversion models." ^
+    "duckdb-nsql|MotherDuck & DuckDB's DuckDB-NSQL: 7B text-to-SQL model." ^
+    "falcon2|TII's Falcon2: 11B causal decoder-only model." ^
+    "command-r7b-arabic|Cohere's Command R 7B with advanced Arabic capabilities." ^
+    "tulu3|AI2's Tulu3: Instruction following model family." ^
+    "nuextract|NuExtract: 3.8B information extraction model based on Phi-3." ^
+    "bespoke-minicheck|Bespoke Minicheck: State-of-the-art fact-checking model." ^
+    "granite3-guardian|IBM's Granite3 Guardian: Risk detection for prompts/responses." ^
+    "sailor2|Sailor2: Multilingual models for South-East Asia." ^
+    "marco-o1|Alibaba's Marco-o1: Open large reasoning model"
 goto menu
 
 :code
 call :display_submenu "Code-Specialized Models" ^
-    "codestral|Mistral's 22B code model" ^
-    "codegemma|Google's 2B and 7B coding models" ^
-    "codellama|7B to 70B for code generation" ^
-    "deepseek-coder|1.3B to 33B code model" ^
-    "deepseek-coder-v2|16B and 236B MoE model" ^
-    "starcoder|1B to 15B for 80+ languages" ^
-    "starcoder2|3B, 7B, 15B next-gen model" ^
-    "wizardcoder|33B state-of-the-art code model" ^
-    "qwen2.5-coder|0.5B to 32B code model" ^
-    "codegeex4|9B for software development" ^
-    "granite-code|IBM's 3B to 34B code models" ^
-    "phind-codellama|34B code generation model" ^
-    "sqlcoder|7B and 15B for SQL generation" ^
-    "codebooga|34B merged code model" ^
-    "stable-code|3B competitive coding model" ^
-    "magicoder|7B trained on synthetic data" ^
-    "opencoder|1.5B and 8B code models" ^
-    "dolphincoder|7B and 15B uncensored coder" ^
-    "codeqwen|7B pretrained on code data" ^
-    "deepcoder|14B open-source coder" ^
-    "athene-v2|72B excels at code completion" ^
-    "devstral|24B model for coding agents" ^
-    "yi-coder|Code language models with <10B parameters"
+    "codestral|Mistral AI's Codestral: 22B specialized code model." ^
+    "codegemma|Google's CodeGemma: 2B & 7B open code models." ^
+    "codellama|Meta's Code Llama: 7B-70B models for code generation, infilling." ^
+    "deepseek-coder|DeepSeek Coder: 1.3B-33B models, 2T token trained." ^
+    "deepseek-coder-v2|DeepSeek Coder V2: Advanced 16B & 236B MoE code models." ^
+    "starcoder|BigCode's StarCoder: 15.5B model for 80+ languages." ^
+    "starcoder2|BigCode's StarCoder2: 3B, 7B, 15B, 600+ languages." ^
+    "wizardcoder|WizardLM's WizardCoder: 33B SOTA code model from StarCoder." ^
+    "qwen2.5-coder|Alibaba's Qwen2.5 Coder: 0.5B to 32B code models." ^
+    "codegeex4|CodeGeeX4: 9B multilingual model for software development." ^
+    "granite-code|IBM's Granite Code: 3B to 34B open-source code models." ^
+    "phind-codellama|Phind's CodeLlama fine-tune: 34B, excels on HumanEval." ^
+    "sqlcoder|Defog's SQLCoder: 7B & 15B for SQL generation." ^
+    "codebooga|CodeBooga: 34B merged code model, uncensored." ^
+    "stable-code|Stability AI's Stable Code: 3B competitive coding model." ^
+    "magicoder|Magicoder: 7B model trained on synthetic code instruction data." ^
+    "opencoder|OpenCoder: 1.5B & 8B code models by Woo Jaz." ^
+    "dolphincoder|Eric Hartford's DolphinCoder: 7B & 15B uncensored coder." ^
+    "codeqwen|Alibaba's CodeQwen1.5: 7B model pretrained on code data." ^
+    "deepcoder|DeepCoder: 14B open-source coding model." ^
+    "athene-v2|Athene V2: 72B model, excels at code completion." ^
+    "devstral|Devstral: 24B model for coding agents." ^
+    "yi-coder|01.AI's Yi Coder: Code language models with <10B parameters."
 goto menu
 
 :math
 call :display_submenu "Math and Reasoning Models" ^
-    "deepseek-r1|1.5B to 671B reasoning model" ^
-    "deepscaler|1.5B fine-tuned reasoning model" ^
-    "openthinker|7B and 32B reasoning models" ^
-    "smallthinker|3B fine-tuned from Qwen" ^
-    "r1-1776|70B and 671B unbiased model" ^
-    "qwen2-math|1.5B to 72B math model" ^
-    "wizard-math|7B to 70B for math and logic" ^
-    "mathstral|7B for math reasoning" ^
-    "cogito|3B to 70B hybrid reasoning model" ^
-    "phi4-reasoning|14B open-weight reasoning models" ^
-    "phi4-mini-reasoning|Lightweight model for advanced reasoning"
+    "deepseek-r1|DeepSeek R1: 1.5B-671B advanced reasoning models." ^
+    "deepscaler|DeepScaler: 1.5B fine-tuned reasoning model." ^
+    "openthinker|OpenThinker: 7B & 32B reasoning models." ^
+    "smallthinker|SmallThinker: 3B fine-tuned from Qwen for reasoning." ^
+    "r1-1776|R1-1776: 70B & 671B unbiased reasoning model." ^
+    "qwen2-math|Alibaba's Qwen2-Math: 1.5B to 72B math-focused models." ^
+    "wizard-math|WizardLM's WizardMath: 7B-70B for math problems." ^
+    "mathstral|Mistral AI's Mathstral: 7B model for math reasoning." ^
+    "cogito|Cogito: 3B to 70B hybrid reasoning model." ^
+    "phi4-reasoning|Microsoft's Phi-4 Reasoning: 14B open-weight reasoning models." ^
+    "phi4-mini-reasoning|Microsoft's Phi-4 Mini Reasoning: Lightweight advanced reasoning."
 goto menu
 
 :embedding
 call :display_submenu "Embedding Models" ^
-    "granite-embedding|IBM's 30M and 278M models" ^
-    "snowflake-arctic-embed|22M to 335M suite" ^
-    "snowflake-arctic-embed2|568M embedding model" ^
-    "mxbai-embed-large|335M state-of-the-art" ^
-    "all-minilm|22M and 33M sentence embeddings" ^
-    "nomic-embed-text|High-performing embeddings" ^
-    "bge-large|335M text-to-vector model" ^
-    "bge-m3|BAAI's versatile embedding model" ^
-    "paraphrase-multilingual|Sentence-transformers model for clustering/semantic search"
+    "granite-embedding|IBM's Granite Embedding: 30M & 278M models." ^
+    "snowflake-arctic-embed|Snowflake's Arctic Embed: 22M to 335M suite." ^
+    "snowflake-arctic-embed2|Snowflake's Arctic Embed2: 568M embedding model." ^
+    "mxbai-embed-large|Mixedbread AI's mxbai-embed-large: SOTA 335M model." ^
+    "all-minilm|Sentence Transformers' All-MiniLM: 22M & 33M sentence embeddings." ^
+    "nomic-embed-text|Nomic Embed: High-performance text embedding model." ^
+    "bge-large|BAAI's BGE-Large: 335M text-to-vector model." ^
+    "bge-m3|BAAI's BGE-M3: Versatile multilingual embedding model." ^
+    "paraphrase-multilingual|Sentence Transformers' Paraphrase Multilingual: For clustering/semantic search."
 goto menu
 
 :uncensored
 call :display_submenu "Uncensored Models" ^
-    "llama2-uncensored|7B and 70B uncensored" ^
-    "dolphin-mixtral|8x7B and 8x22B coder" ^
-    "dolphin-phi|2.7B uncensored model" ^
-    "dolphin-llama3|8B and 70B versatile model" ^
-    "dolphincoder|7B and 15B coding model" ^
-    "wizardlm-uncensored|13B uncensored model" ^
-    "wizard-vicuna-uncensored|7B to 30B model" ^
-    "dolphin-mistral|7B uncensored coder" ^
-    "everythinglm|13B with 16K context"
+    "llama2-uncensored|Llama2 Uncensored: Unfiltered 7B & 70B Llama2 versions." ^
+    "dolphin-mixtral|Dolphin Mixtral: Uncensored 8x7B & 8x22B models by Eric Hartford." ^
+    "dolphin-phi|Eric Hartford's Dolphin Phi: 2.7B uncensored model." ^
+    "dolphin-llama3|Eric Hartford's Dolphin Llama3: 8B & 70B versatile uncensored model." ^
+    "dolphincoder|Eric Hartford's DolphinCoder: 7B & 15B uncensored coding model." ^
+    "wizardlm-uncensored|WizardLM Uncensored: 13B uncensored model." ^
+    "wizard-vicuna-uncensored|Wizard Vicuna Uncensored: 7B to 30B model." ^
+    "dolphin-mistral|Eric Hartford's Dolphin Mistral: 7B uncensored coder." ^
+    "everythinglm|EverythingLM: 13B uncensored model with 16K context."
 goto menu
 
 :medical
 call :display_submenu "Medical Models" ^
-    "medllama2|7B fine-tuned for medical queries" ^
-    "meditron|7B and 70B medical LLM"
+    "medllama2|MedLlama2: Llama2 7B fine-tuned for medical domain." ^
+    "meditron|Meditron: 7B & 70B LLMs specialized for medical applications."
 goto menu
 
 :specialized
 call :display_submenu "Specialized Models" ^
-    "llava|7B to 34B multimodal model" ^
-    "llava-phi3|3.8B vision model" ^
-    "llava-llama3|8B vision benchmark model" ^
-    "moondream|1.8B vision model for edge" ^
-    "bakllava|7B multimodal Mistral model" ^
-    "nexusraven|13B for function calling" ^
-    "granite3.2-vision|2B for visual documents" ^
-    "llama3.2-vision|11B and 90B image reasoning" ^
-    "mistral-small3.1|24B with vision capabilities" ^
-    "qwen2.5vl|Flagship vision-language model of Qwen" ^
-    "minicpm-v|Multimodal LLMs for vision-language understanding"
+    "llava|LLaVA: Large Language and Vision Assistant (7B-34B)." ^
+    "llava-phi3|LLaVA-Phi3: 3.8B vision model." ^
+    "llava-llama3|LLaVA-Llama3: 8B vision benchmark model." ^
+    "moondream|Moondream: Tiny 1.8B vision model for edge devices." ^
+    "bakllava|BakLLaVA: 7B multimodal Mistral model for vision." ^
+    "nexusraven|NexusRaven: 13B model for function calling." ^
+    "granite3.2-vision|IBM's Granite 3.2 Vision: 2B for visual documents." ^
+    "llama3.2-vision|Meta's Llama 3.2 Vision: 11B & 90B image reasoning." ^
+    "mistral-small3.1|Mistral Small 3.1: 24B with vision capabilities." ^
+    "qwen2.5vl|Alibaba's Qwen2.5VL: Flagship vision-language model." ^
+    "minicpm-v|MiniCPM-V: Multimodal LLMs for vision-language understanding."
 goto menu
 
 :display_submenu
