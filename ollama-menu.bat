@@ -99,11 +99,14 @@ for %%m in (
     all-minilm
     nomic-embed-text
     bge-large
+    llama2-uncensored
     dolphin-mixtral
     dolphin-phi
     dolphin-llama3
     dolphincoder
     wizardlm-uncensored
+    wizard-vicuna-uncensored
+    medllama2
     meditron
     llava-phi3
     llava-llama3
@@ -130,6 +133,7 @@ for %%m in (
     firefunction-v2
     llama3-groq-tool-use
     mathstral
+    nous-hermes2-mixtral
     stable-code
     tinydolphin
     qwen
@@ -138,30 +142,42 @@ for %%m in (
     starling-lm
     dbrx
     alfred
+    wizardlm2
+    nous-hermes2
     notus
     notux
     openhermes
     tinyllama
+    llama-pro
     megadolphin
     zephyr
     mistral-openorca
     codebooga
     mistrallite
+    xwinlm
+    yarn-llama2
     yarn-mistral
     yi
     openchat
+    goliath
     deepseek-llm
     magicoder
     stablelm-zephyr
     orca2
     orca-mini
+    open-orca-platypus2
+    nous-hermes
+    vicuna
     wizard-math
+    wizard-vicuna
+    phind-codellama
     falcon
     sqlcoder
     samantha-mistral
     dolphin-mistral
     everythinglm
     codeup
+    stable-beluga
     qwen3
     devstral
     llama4
@@ -172,22 +188,32 @@ for %%m in (
     deepseek-v3
     dolphin3
     bge-m3
+    llama2-chinese
+    aya
+    glm4
     llama3-chatqa
     llama3-gradient
     yi-coder
     solar
     internlm2
+    wizardlm
+    exaone3.5
+    paraphrase-multilingual
     granite3.3
     phi4-reasoning
     shieldgemma
+    exaone-deep
+    llama-guard3
     reader-lm
     duckdb-nsql
     falcon2
+    command-r7b-arabic
     tulu3
     nuextract
     bespoke-minicheck
     granite3-guardian
     phi4-mini-reasoning
+    sailor2
     marco-o1
 ) do (
     echo Updating %%m...
@@ -225,16 +251,22 @@ call :display_submenu "General Purpose Models" ^
     "nemotron-mini|NVIDIA's Nemotron Mini: 4B for roleplay & RAG. [2025-04-08]" ^
     "solar-pro|Upstage's Solar Pro: 22B model for single GPU. [2025-03-10]" ^
     "hermes3|Nous Research's Hermes3: 3B to 405B models. [2025-02-15]" ^
+    "wizardlm2|Microsoft's WizardLM-2: Advanced conversational model. [2024-11-22]" ^
+    "nous-hermes2|Nous Research's Hermes2: 10.7B & 34B models. [2025-01-22]" ^
     "notus|Argilla's Notus: 7B chat model based on Zephyr. [2025-03-01]" ^
     "notux|Argilla's Notux: Top-performing MoE model. [2025-03-01]" ^
     "openhermes|Teknium's OpenHermes: 7B fine-tuned on Mistral. [2025-02-01]" ^
     "tinyllama|TinyLlama: Compact 1.1B model. [2024-10-22]" ^
+    "llama-pro|Expanded Llama 2 for programming tasks. [2024-09-22]" ^
     "megadolphin|Eric Hartford's MegaDolphin: 120B interleaved Dolphin model. [2025-05-20]" ^
     "zephyr|HuggingFace's Zephyr: Fine-tuned Mistral & Mixtral models. [2025-01-01]" ^
     "mistral-openorca|OpenOrca fine-tune of Mistral 7B. [2025-02-22]" ^
     "mistrallite|Amazon's MistralLite: Long-context Mistral model. [2025-02-22]" ^
+    "xwinlm|Xwin-LM: Conversational Llama 2-based model. [2024-12-22]" ^
     "neural-chat|Intel's Neural Chat: Fine-tuned Mistral model. [2025-03-22]" ^
     "openchat|OpenChat: High-performing open-source chat model. [2025-01-15]" ^
+    "yi|01.AI's Yi: High-performing 6B, 9B, 34B models. [2025-04-22]" ^
+    "goliath| Goliath: Combined Llama 2 70B model. [2024-08-22]" ^
     "alfred|Alfred: Robust conversational model. [2025-03-15]" ^
     "dbrx|Databricks' DBRX: 132B general-purpose MoE model. [2025-04-01]" ^
     "starling-lm|Berkeley's Starling-LM: 7B model for chatbot helpfulness. [2025-02-01]" ^
@@ -245,20 +277,28 @@ call :display_submenu "General Purpose Models" ^
     "qwq|Qwen's QWQ: Reasoning model of the Qwen series. [2025-04-15]" ^
     "deepseek-v3|DeepSeek V3: 671B MoE language model. [2025-05-10]" ^
     "dolphin3|Eric Hartford's Dolphin 3.0: Llama 3.1 8B general purpose model [2025-05-20]" ^
+    "llama2-chinese|Llama 2 fine-tuned for Chinese dialogue. [2024-07-22]" ^
+    "aya|Cohere's Aya: Multilingual models (23 languages). [2025-04-01]" ^
+    "glm4|Zhipu AI's GLM-4: Strong multi-lingual general language model. [2025-04-10]" ^
     "llama3-chatqa|NVIDIA's Llama 3 ChatQA: For conversational QA & RAG. [2025-04-22]" ^
     "llama3-gradient|Gradient AI's Llama-3 8B with extended context length. [2025-04-22]" ^
     "solar|Upstage's Solar: Compact 10.7B large language model. [2025-02-10]" ^
     "internlm2|InternLM2: 7B model for practical scenarios with reasoning. [2025-03-05]" ^
+    "wizardlm|Microsoft's WizardLM: General use model based on Llama 2. [2024-10-22]" ^
+    "exaone3.5|LG AI's EXAONE 3.5: Bilingual (English/Korean) models. [2025-04-01]" ^
     "granite3.3|IBM's Granite 3.3: 2B/8B 128K context models. [2025-05-01]" ^
     "shieldgemma|Google's Shield Gemma: Instruction tuned for safety evaluation. [2025-05-08]" ^
+    "exaone-deep|LG AI's EXAONE Deep: Reasoning models (math/coding). [2025-04-01]" ^
     "llama-guard3|Meta's Llama Guard 3: Content safety classification models. [2025-05-18]" ^
     "reader-lm|Reader LM: HTML to Markdown conversion models. [2025-03-15]" ^
     "duckdb-nsql|MotherDuck & DuckDB's DuckDB-NSQL: 7B text-to-SQL model. [2025-04-20]" ^
     "falcon2|TII's Falcon2: 11B causal decoder-only model. [2025-04-25]" ^
+    "command-r7b-arabic|Cohere's Command R 7B with advanced Arabic capabilities. [2025-05-12]" ^
     "tulu3|AI2's Tulu3: Instruction following model family. [2025-04-10]" ^
     "nuextract|NuExtract: 3.8B information extraction model based on Phi-3. [2025-05-15]" ^
     "bespoke-minicheck|Bespoke Minicheck: State-of-the-art fact-checking model. [2025-05-01]" ^
     "granite3-guardian|IBM's Granite3 Guardian: Risk detection for prompts/responses. [2025-05-01]" ^
+    "sailor2|Sailor2: Multilingual models for South-East Asia. [2025-04-18]" ^
     "marco-o1|Alibaba's Marco-o1: Open large reasoning model [2025-05-05]"
 goto menu
 
@@ -273,6 +313,7 @@ call :display_submenu "Code-Specialized Models" ^
     "qwen2.5-coder|Alibaba's Qwen2.5 Coder: 0.5B to 32B code models. [2025-05-01]" ^
     "codegeex4|CodeGeeX4: 9B multilingual model for software development. [2025-04-10]" ^
     "granite-code|IBM's Granite Code: 3B to 34B open-source code models. [2025-03-15]" ^
+    "phind-codellama|Phind's CodeLlama fine-tune: 34B, excels on HumanEval. [2024-11-22]" ^
     "sqlcoder|Defog's SQLCoder: 7B & 15B for SQL generation. [2025-02-22]" ^
     "codebooga|CodeBooga: 34B merged code model, uncensored. [2025-03-01]" ^
     "stable-code|Stability AI's Stable Code: 3B competitive coding model. [2025-04-01]" ^
@@ -309,22 +350,26 @@ call :display_submenu "Embedding Models" ^
     "all-minilm|Sentence Transformers' All-MiniLM: 22M & 33M sentence embeddings. [2024-10-22]" ^
     "nomic-embed-text|Nomic Embed: High-performance text embedding model. [2025-03-22]" ^
     "bge-large|BAAI's BGE-Large: 335M text-to-vector model. [2025-02-22]" ^
-    "bge-m3|BAAI's BGE-M3: Versatile multilingual embedding model. [2025-04-10]"
+    "bge-m3|BAAI's BGE-M3: Versatile multilingual embedding model. [2025-04-10]" ^
+    "paraphrase-multilingual|Sentence Transformers' Paraphrase Multilingual: For clustering/semantic search. [2024-09-22]"
 goto menu
 
 :uncensored
 call :display_submenu "Uncensored Models" ^
+    "llama2-uncensored|Llama2 Uncensored: Unfiltered 7B & 70B Llama2 versions. [2024-11-22]" ^
     "dolphin-mixtral|Dolphin Mixtral: Uncensored 8x7B & 8x22B models by Eric Hartford. [2025-05-22]" ^
     "dolphin-phi|Eric Hartford's Dolphin Phi: 2.7B uncensored model. [2025-05-20]" ^
     "dolphin-llama3|Eric Hartford's Dolphin Llama3: 8B & 70B versatile uncensored model. [2025-05-20]" ^
     "dolphincoder|Eric Hartford's DolphinCoder: 7B & 15B uncensored coding model. [2025-05-20]" ^
     "wizardlm-uncensored|WizardLM Uncensored: 13B uncensored model. [2024-10-22]" ^
+    "wizard-vicuna-uncensored|Wizard Vicuna Uncensored: 7B to 30B model. [2024-09-22]" ^
     "dolphin-mistral|Eric Hartford's Dolphin Mistral: 7B uncensored coder. [2025-05-20]" ^
     "everythinglm|EverythingLM: 13B uncensored model with 16K context. [2025-01-22]"
 goto menu
 
 :medical
 call :display_submenu "Medical Models" ^
+    "medllama2|MedLlama2: Llama2 7B fine-tuned for medical domain. [2024-05-22]" ^
     "meditron|Meditron: 7B & 70B LLMs specialized for medical applications. [2025-01-22]"
 goto menu
 
