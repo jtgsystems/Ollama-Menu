@@ -174,3 +174,28 @@ Feel free to modify and share! 🗳️
 
 Dive into the world of AI with ease and style.  
 Run those models, write some code, or explore new ideas — this script is your gateway to AI awesomeness! 🎇
+
+# 🚀 Universal Ollama Optimizer Integration
+
+The Universal Ollama Optimizer now integrates the best features from this Ollama-Menu project!
+
+## 🔗 Enhanced Project
+Check out the enhanced Universal Ollama Optimizer with your menu features:
+**https://github.com/jtgsystems/universal-ollama-optimizer**
+
+## ✨ Features Integrated
+- ✅ Professional model categorization system
+- ✅ Comprehensive model descriptions  
+- ✅ Update all models functionality
+- ✅ 50+ curated models with detailed info
+- ✅ Professional terminal interface
+- ✅ Enhanced user experience
+
+## 🎯 Cross-Platform Benefits
+- **Ollama-Menu**: Windows .bat interface
+- **Universal Ollama Optimizer**: Linux bash with advanced features
+
+Both projects now complement each other perfectly for different platforms!
+
+---
+*Updated: Tue Sep 16 01:41:23 AM EDT 2025 - Integration with Universal Ollama Optimizer*
