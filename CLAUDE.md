@@ -576,3 +576,9 @@ interpreter --model ollama/[modelname]
 **Project Status**: Active
 **Maintainer**: JTGSYSTEMS
 **Repository**: https://github.com/jtgsystems/Ollama-Menu
+
+## Framework Versions
+
+- No major frameworks detected in this project
+- This may be a utility script, documentation project, or uses custom dependencies
+
