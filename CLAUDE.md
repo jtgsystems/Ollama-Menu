@@ -106,7 +106,7 @@ The script organizes 100+ Ollama models into specialized categories:
 - meditron (7B and 70B medical LLM)
 
 #### Specialized Models (8 models)
-- **Vision Models**: llava, llava-phi3, llava-llama3, moondream, bakllava, granite3.2-vision, llama3.2-vision
+- **Vision Models**: qwen3-vl, qwen3-vl-phi3, qwen3-vl-llama3, moondream, bakqwen3-vl, granite3.2-vision, llama3.2-vision
 - **Function Calling**: nexusraven (13B)
 - **Other**: mistral-small3.1 (24B with vision)
 
@@ -279,7 +279,7 @@ The script includes detailed metadata for each model:
 - Base models: Single name (e.g., `llama3`, `mistral`, `phi4`)
 - Versioned models: Dot notation (e.g., `llama3.1`, `gemma2`, `phi3.5`)
 - Specialized variants: Hyphenated (e.g., `deepseek-coder`, `command-r-plus`)
-- Family variants: Suffix notation (e.g., `dolphin-mixtral`, `llava-phi3`)
+- Family variants: Suffix notation (e.g., `dolphin-mixtral`, `qwen3-vl-phi3`)
 
 ### Size Variants
 Models are available in multiple sizes:
