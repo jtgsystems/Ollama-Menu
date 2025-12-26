@@ -572,13 +572,37 @@ interpreter --model ollama/[modelname]
 
 ---
 
-**Last Updated**: 2025-10-26
+---
+
+## Summary of Key Differences vs Ollama-Menu-main
+
+This repository (Ollama-Menu) is a simpler version with:
+- **100+ models** (vs 230+ in Ollama-Menu-main)
+- **189 models** in update list (vs 227 in Ollama-Menu-main)
+- Same 7 category structure
+- Same core functionality
+
+The main repository (Ollama-Menu-main) has more recent model additions including:
+- llama4, qwen3, qwq, deepseek-v3
+- phi4-reasoning, phi4-mini-reasoning
+- granite3.3, marco-o1, exaone-deep
+- Additional specialized and embedding models
+
+Both repositories are actively maintained and serve the same purpose with different model selections.
+
+---
+
+**Last Updated**: 2025-12-26
 **Project Status**: Active
 **Maintainer**: JTGSYSTEMS
 **Repository**: https://github.com/jtgsystems/Ollama-Menu
+**Branch**: main
+**Remote**: git@github.com:jtgsystems/Ollama-Menu.git
 
 ## Framework Versions
 
-- No major frameworks detected in this project
-- This may be a utility script, documentation project, or uses custom dependencies
+- **Windows Batch Script**: Native CMD interpreter
+- **Ollama**: Latest version (user-installed)
+- **Optional INTERPRETER**: Open Interpreter (user-installed)
+- No additional frameworks required
 
