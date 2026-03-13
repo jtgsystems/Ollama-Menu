@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :menu
 cls
 echo ==================================
-echo    AI Model Selection Menu v2.0
+echo    AI Model Selection Menu v3.0
 echo  by Joint Technology Group Inc.
 echo       JTGSYSTEMS.COM
 echo ==================================
@@ -345,7 +345,25 @@ call :display_submenu "General Purpose Models" ^
     "rnj-1|RNJ open-source language model" ^
     "llama3-chatqa|NVIDIA's Llama 3 for conversational QA" ^
     "llama3-gradient|Llama-3 8B with extended context" ^
-    "reader-lm|HTML to Markdown conversion models"
+    "reader-lm|HTML to Markdown conversion models" ^
+    "qwen|Alibaba's Qwen 0.5B to 110B series" ^
+    "deepseek-llm|Advanced model with 2T bilingual tokens" ^
+    "deepseek-v2|Strong economical MoE model" ^
+    "falcon|TII's 7B to 180B models" ^
+    "nous-hermes|General use 7B/13B models" ^
+    "nous-hermes2-mixtral|Nous Research over Mixtral 8x7B" ^
+    "orca2|Microsoft's Llama 2 for reasoning" ^
+    "orca-mini|3B to 70B general purpose" ^
+    "smollm|Small 135M to 1.7B models" ^
+    "smollm2|Compact 135M/360M/1.7B models" ^
+    "stable-beluga|Llama 2 fine-tuned on Orca" ^
+    "stablelm-zephyr|Lightweight 3B chat model" ^
+    "tinydolphin|Experimental 1.1B Dolphin" ^
+    "vicuna|Llama-based 7B/13B/33B chat" ^
+    "wizard-vicuna|13B based on Llama 2" ^
+    "yarn-llama2|Llama 2 with 128K context" ^
+    "yarn-mistral|Mistral with 64K/128K context" ^
+    "samantha-mistral|Philosophy/psychology companion"
 goto menu
 
 :code
@@ -383,7 +401,9 @@ call :display_submenu "Code-Specialized Models" ^
     "firefunction-v2|Function calling specialist" ^
     "functiongemma|Google's function calling model" ^
     "llama3-groq-tool-use|Tool-use optimized Llama 3" ^
-    "translategemma|Google's translation specialist model"
+    "translategemma|Google's translation specialist model" ^
+    "codeup|Great code generation based on Llama2" ^
+    "open-orca-platypus2|Open Orca and Platypus 2 merge"
 goto menu
 
 :math

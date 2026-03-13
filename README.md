@@ -2,10 +2,10 @@
 
 # AI Model Selector Batch Script 🚀
 
-Welcome to the **AI Model Selection Menu v2.0!** 🎉
+Welcome to the **AI Model Selection Menu v3.0!** 🎉
 This batch script makes it simple to browse, update, and run AI models from **Ollama** on your Windows machine. Whether you're a **coder** 💻, **researcher** 🔬, or just exploring AI, this tool has you covered with a clean, menu-driven interface.
 
-**New in v2.0**: Added 60+ newest 2025/2026 models including llama4, gemini-3-pro-preview, glm-4.7-flash, qwen3-coder, devstral-2, phi4-reasoning, deepseek-v3.2, and more!
+**New in v3.0**: Added 100+ cutting-edge 2025/2026 models including gpt-oss (OpenAI's first open-weight), qwen3.5, glm-5, kimi-k2.5, mistral-large-3, nemotron-3-super, deepseek-v3.2, and more! Total 350+ models organized across 10 categories.
 
 **Developed by**: Joint Technology Group Inc. 🌐  
 🔗 [JTGSYSTEMS.COM](https://jtgsystems.com)
@@ -202,7 +202,7 @@ Check out the enhanced Universal Ollama Optimizer with your menu features:
 Both projects now complement each other perfectly for different platforms!
 
 ---
-*Updated: Fri Jan 31 2026 - v2.0 with 160+ models including newest 2025/2026 releases*
+*Updated: Mar 13 2026 - v3.0 with 350+ models including newest 2025/2026 releases*
 
 ### SEO Keyword Cloud
 
